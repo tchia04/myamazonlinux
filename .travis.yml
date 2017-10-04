@@ -11,4 +11,4 @@ addons:
     - shellcheck
 
 script:
-    - bash shellcheck *.sh
+    - shellcheck *.sh
