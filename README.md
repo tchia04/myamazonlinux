@@ -1,5 +1,7 @@
 # myamazonlinux
 
+[![Build Status](https://travis-ci.org/tchia04/myamazonlinux.svg?branch=master)](https://travis-ci.org/tchia04/myamazonlinux)
+
 The official Amazon Linux Docker image at https://store.docker.com/images/amazonlinux doesn't contain many useful commands such as ps, less, vi, sudo, etc
 
 It doesn't even have an ec2-user.
