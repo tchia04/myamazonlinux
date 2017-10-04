@@ -10,3 +10,5 @@ addons:
     packages:
     - shellcheck
 
+script:
+    - bash shellcheck *.sh
