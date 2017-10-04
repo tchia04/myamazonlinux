@@ -1,11 +1,12 @@
-language: bash
-
 # install shellcheck  from https://github.com/koalaman/shellcheck
 # run shellcheck
 # fail build if shellcheck report anything bad
-before_script:
-    - curl -L "http://downloads.sourceforge.net/shunit2/shunit2-2.0.3.tgz" | tar zx
 
-script:
-    - bash equality_test.sh
+language: bash
+addons:
+  apt:
+    sources:
+    - debian-sid    # Grab ShellCheck from the Debian repo
+    packages:
+    - shellcheck
 
