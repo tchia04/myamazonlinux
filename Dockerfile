@@ -1,6 +1,8 @@
 FROM amazonlinux:2017.09.0.20170930
 
-RUN yum update && yum install -y less procps git curl which vi sudo ruby24 python36
+RUN yum update && yum install -y less procps git curl which vi sudo ruby24 
+RUN yum install python36 python36-virtualenv python36-pip
+
 RUN useradd -ms /bin/bash ec2-user
 
 COPY cloud-init  /etc/sudoers.d
